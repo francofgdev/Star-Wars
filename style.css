@@ -46,11 +46,13 @@ header {
 .social-media {
     width: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 i {
+    width: 60%;
     font-size: 1.2rem;
+    transition: 0.5s;
 }
 
 i:hover {
@@ -202,4 +204,63 @@ footer {
     font-size: 1rem;
     font-weight: lighter;
     color: gold;
+}
+
+/*Responsive*/
+
+@media (max-width: 800px) {
+    
+    h2 {
+        text-align: center;
+        padding: 20px;
+    }
+    .cards {
+        width: 90%;
+        height: 700px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    header {
+        justify-content: center
+    }
+    .social-media {
+        margin-right: 50px;
+    }
+    .cards {
+        width: 90%;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    p {
+        text-align: center;
+    }   
+}
+
+@media (max-width: 390px) {
+    h2 {
+        margin: 5px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    i {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media {
+        margin-right: 60px;
+    }
 }
