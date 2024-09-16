@@ -258,6 +258,7 @@ footer {
     }
 
     .social-media-footer {
+        display: block;
         display: flex;
         gap: 1rem;
         
